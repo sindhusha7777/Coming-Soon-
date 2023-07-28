@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/vidhey/OneDrive/Desktop/coming%20soon.html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="./Coming Soon_files/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="./Coming Soon_files/logo.png" class="logo">
+        </div>
+        <div class="content">
+            <h1>
+                Happy <span>New</span> Year
+            </h1>
+            <div class="launch-time">
+                <p id="Days">156</p>
+                <span>Days</span>
+            </div>
+            <div class="launch-time">
+                <p id="Hrs">22</p>
+                <span>Hrs</span>
+            </div>
+            <div class="launch-time">
+                <p id="Mins">7</p>
+                <span>Mins</span>
+            </div>
+            <div class="launch-time">
+                <p id="Secs">14</p>
+                <span>Secs</span>
+            </div>
+            <button type="button"> Learn More <img src="./Coming Soon_files/tri.png"></button>
+        </div>
+        <img src="./Coming Soon_files/rocket.png" class="rocket">
+        
+    </div>
+    <script>
+        var countDownDate = new Date("Jan,2024  00:00:00").getTime();
+var x=setInterval(function(){
+
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var Days= Math.floor(distance / (1000*60*60*24));
+    var Hrs= Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    var Mins= Math.floor((distance % (1000*60*60)) / (1000*60));
+    var Secs= Math.floor((distance % (1000*60)) / 1000);
+    document.getElementById("Days").innerHTML=Days;
+    document.getElementById("Hrs").innerHTML=Hrs;
+    document.getElementById("Mins").innerHTML=Mins;
+    document.getElementById("Secs").innerHTML=Secs; 
+
+},1000);
+</script>
+   
+
+
+     </body></html>
